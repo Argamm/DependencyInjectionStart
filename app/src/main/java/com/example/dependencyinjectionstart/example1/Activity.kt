@@ -1,16 +1,18 @@
 package com.example.dependencyinjectionstart.example1
 
+import javax.inject.Inject
+
 class Activity {
 
-    lateinit var computer: Computer
+    @Inject
     lateinit var keyboard: Keyboard
 
     init {//in activity need to do this in onCreate methode
-        Component().inject(this)
+//        DaggerNewComponent.create().inject(this)
     }
 
     fun getKeyboard() {
-//        keyboard
+
     }
 
 

@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
 }
 
+
 android {
     namespace = "com.example.dependencyinjectionstart"
     compileSdk = 34
@@ -46,6 +47,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    implementation ("com.google.dagger:dagger:2.44.2")
-    annotationProcessor ("com.google.dagger:dagger-compiler:2.44.2")
+
+    implementation("com.google.dagger:dagger:2.45")  // Replace 'x' with the latest version
+    annotationProcessor("com.google.dagger:dagger-compiler:2.45")
+
+
+
 }
